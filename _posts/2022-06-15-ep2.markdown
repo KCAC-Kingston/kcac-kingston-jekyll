@@ -1,5 +1,5 @@
 ---
-title:        "Test Content"
+title:        "Test Content 1"
 type:         redirect
 img:
 Link1:    
