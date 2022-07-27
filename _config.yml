@@ -12,3 +12,9 @@ exclude:
   - Gemfile.lock
 
 permalink: /images/:/assets/
+
+collections:
+  pages:
+    output: true
+    permalink: :name
+  
