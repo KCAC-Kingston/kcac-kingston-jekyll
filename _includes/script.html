@@ -1,0 +1,24 @@
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/acctoolbar.min.js"></script>
+<script>
+  window.onload = function() {
+    window.micAccessTool = new MicAccessTool({
+
+      buttonPosition: 'right', // default is 'left'
+    });
+  }
+</script>
+<script>
+    if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      window.location = 'microsoft-edge:' + window.location;
+      setTimeout(function() {
+        window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+      }, 1);
+    }
+  </script>

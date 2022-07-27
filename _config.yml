@@ -10,3 +10,5 @@ logo: /assets/img/lvfm.jpg
 exclude:
   - Gemfile
   - Gemfile.lock
+
+permalink: /images/:/assets/

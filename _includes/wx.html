@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="images/KCAC_Logo.ico" />
+<title>RDS</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							
+							<b
+							><h1>WeChat browser not supported<br />本页面不支持从微信浏览器中打开</h1></b
+						  ><br />
+						  <b>Please click the three dot on top right and select ‘open in browser’ <br>请点击右上角三个点，选择‘浏览器打开’</b><br>(Shown in the picture below 如下图所示)<br><img src='images/oib.jpeg' width =40%><br>
+						  
+						  Alternatively, please copy this link below to your phone browser.<br>或者请复制下列网页并使用手机浏览器打开。
+						  <br><br><b>{{ post.url }}</b><br><br>
+							 
+						</div>
+
+					</section>
+				</section>
+				<!-- Footer -->
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    
+			<script>
+				var ua = navigator.userAgent.toLowerCase();
+				var isWeixin = ua.indexOf('micromessenger') != -1;
+				if (!isWeixin) {
+				window.location.href = "{{ post.url }}"
+				}
+				</script>
+			  <script>
+				if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+				  window.location = 'microsoft-edge:' + window.location;
+				  setTimeout(function() {
+					window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+				  }, 1);
+				}
+			  </script>
+	</body>
+</html>

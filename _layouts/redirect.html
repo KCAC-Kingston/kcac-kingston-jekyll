@@ -1,21 +1,5 @@
----
-layout: redirect
----
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="images/KCAC_Logo.ico" />
-    <title>KCAC RDS</title>
-    <link
-      rel="stylesheet"
-      href="splash_style.css"
-      type="text/css"
-      media="all"
-      title="no title"
-      charset="utf-8"
-    />
-  </head>
+  {% include header.html %}
   <body id="splash">
     <div id="wrapper">
       <div id="center_box">
@@ -27,23 +11,6 @@ layout: redirect
         <a href="{{ post.url }}">Let's Go</a><br /><br />
       </div>
     </div>  
-        <script>
-          var ua = navigator.userAgent.toLowerCase();
-          var isWeixin = ua.indexOf('micromessenger') == -1;
-          if (!isWeixin) {
-          window.location.href = "https://kcac.ca/wx"
-          }
-          else{
-            window.location.href = "{{ post.url }}"
-          }
-          </script>
-          <script>
-            if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
-              window.location = 'microsoft-edge:' + window.location;
-              setTimeout(function() {
-                window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
-              }, 1);
-            }
-          </script>
+    {% include script_wx.html %}
   </body>
 </html>

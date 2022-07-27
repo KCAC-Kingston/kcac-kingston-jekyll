@@ -1,0 +1,8 @@
+
+			<script>
+                var ua = navigator.userAgent.toLowerCase();
+                var isWeixin = ua.indexOf('micromessenger') == -1;
+                if (!isWeixin) {
+                window.location.href = "{{ post.url }}"
+                }
+                </script>
