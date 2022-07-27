@@ -1,6 +1,6 @@
 ---
-title:        "活水fm.vol.01 我们向往的生活！"
-type:         
+title:        "Test Content"
+type:         redirect
 img:
 Link1:    
 Link2: 
